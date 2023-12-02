@@ -20,7 +20,7 @@ function Header({ setSearchTerm }) {
         <img
           className="users-icon"
           alt="Group of users"
-          src="../../public/team_476863.png"
+          src="../../public/users.png"
         />
       </div>
     </header>
