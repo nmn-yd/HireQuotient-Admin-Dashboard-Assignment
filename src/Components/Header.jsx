@@ -17,11 +17,7 @@ function Header({ setSearchTerm }) {
           ref={inputEl}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <img
-          className="users-icon"
-          alt="Group of users"
-          src="../../public/users.png"
-        />
+        <img className="users-icon" alt="Group of users" src="users.png" />
       </div>
     </header>
   );
