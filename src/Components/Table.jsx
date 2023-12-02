@@ -4,7 +4,8 @@ import Spinner from "./Spinner";
 import Pagination from "./Pagination";
 
 function Table({
-  users,
+  filterUsers,
+  totalUsers,
   handleUpdateUser,
   setUsers,
   isLoading,
@@ -17,9 +18,13 @@ function Table({
   const userPerPage = 10;
   const indexOfLastUser = currentPage * userPerPage;
   const indexOfFirstUser = indexOfLastUser - userPerPage;
-  const currentUsers = users.slice(indexOfFirstUser, indexOfLastUser);
-  const nPage = Math.ceil(users.length / userPerPage);
+  const currentUsers = filterUsers.slice(indexOfFirstUser, indexOfLastUser);
+  const nPage = Math.ceil(filterUsers.length / userPerPage);
   const numbers = [...Array(nPage + 1).keys()].slice(1);
+
+  // handle row selection and deletion
+
+  console.log(currentUsers);
 
   const handleSelectAllRows = () => {
     const allRowIds = currentUsers.map((user) => user.id);
@@ -33,7 +38,7 @@ function Table({
   };
 
   const handleDeleteSelectedRows = () => {
-    const updatedUsers = users.filter(
+    const updatedUsers = totalUsers.filter(
       (user) => !selectedRows.includes(user.id)
     );
     setUsers(updatedUsers);

@@ -49,11 +49,13 @@ function App() {
       <Header setSearchTerm={setSearchTerm} />
       <Table
         key={filteredUsers.length}
-        users={filteredUsers}
+        filterUsers={filteredUsers}
+        totalUsers={users}
         setUsers={setUsers}
         isLoading={isLoading}
         handleDeleteRow={handleDeleteRow}
         handleUpdateUser={handleUpdateUser}
+        setSearchTerm={setSearchTerm}
       />
     </div>
   );
