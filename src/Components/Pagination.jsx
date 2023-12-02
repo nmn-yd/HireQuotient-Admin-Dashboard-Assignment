@@ -45,7 +45,7 @@ function Pagination({
         <ul className="pagination">
           <li className="page-item">
             <button onClick={setPageToStart} className="page-link page=start">
-              Start
+              {"<<"}
             </button>
           </li>
           <li className="page-item ">
@@ -55,7 +55,7 @@ function Pagination({
                 disabled={currentPage === 1}
                 className="page-link page-prev"
               >
-                Prev
+                {"<"}
               </button>
             )}
           </li>
@@ -74,7 +74,7 @@ function Pagination({
               ""
             ) : (
               <button onClick={nextPage} className="page-link page-next">
-                Next
+                {">"}
               </button>
             )}
           </li>
@@ -85,7 +85,7 @@ function Pagination({
                 disabled={currentPage === numbers.length}
                 className="page-link page-end"
               >
-                End
+                {">>"}
               </button>
             )}
           </li>

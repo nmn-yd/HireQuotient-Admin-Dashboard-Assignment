@@ -23,9 +23,6 @@ function Table({
   const numbers = [...Array(nPage + 1).keys()].slice(1);
 
   // handle row selection and deletion
-
-  console.log(currentUsers);
-
   const handleSelectAllRows = () => {
     const allRowIds = currentUsers.map((user) => user.id);
     setSelectedRows(allRowIds);
