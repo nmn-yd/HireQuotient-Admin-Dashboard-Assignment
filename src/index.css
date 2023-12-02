@@ -12,10 +12,13 @@ body {
   color: #eee;
   font-size: 1.125rem;
   font-family: system-ui;
+  font-size: 1rem;
+  zoom: 0.9;
 }
 
 .wrapper {
   width: min(900px, 100% - 3rem);
+
   margin-inline: auto;
 }
 
