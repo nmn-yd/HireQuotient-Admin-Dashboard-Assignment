@@ -94,10 +94,10 @@ const TableRow = ({
           {isEditing ? (
             <>
               <button onClick={handleSaveClick} className="save">
-                <img alt="Delete icon" src="../../public/correct.png" />
+                <img alt="save icon" src="../../public/correct.png" />
               </button>
               <button onClick={handleCancelClick} className="cancel">
-                <img alt="Delete icon" src="../../public/remove.png" />
+                <img alt="cancel icon" src="../../public/remove.png" />
               </button>
             </>
           ) : (
@@ -114,7 +114,7 @@ const TableRow = ({
                 onClick={handleEditClick}
                 className="edit"
               >
-                <img alt="Delete icon" src="../../public/edit.png" />
+                <img alt="Edit icon" src="../../public/edit.png" />
               </button>
             </>
           )}

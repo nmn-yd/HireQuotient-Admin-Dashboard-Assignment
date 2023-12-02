@@ -19,7 +19,7 @@ function Header({ setSearchTerm }) {
         />
         <img
           className="users-icon"
-          alt="Dashboard Icon"
+          alt="Group of users"
           src="../../public/team_476863.png"
         />
       </div>
