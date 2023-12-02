@@ -8,7 +8,7 @@ function Header({ setSearchTerm }) {
   });
   return (
     <header className="header">
-      <img alt="Dashboard Icon" src="../../public/logo.png" />
+      <img alt="Dashboard Icon" src="logo.png" />
       <div className="sub-header">
         <input
           type="text"
