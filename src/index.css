@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  color: #eee;
+  font-size: 1.125rem;
+  font-family: system-ui;
+}
+
+.wrapper {
+  width: min(900px, 100% - 3rem);
+  margin-inline: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.sub-header {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  font-size: 20px;
+  border: 2px solid #585353;
+  padding: 10px 20px;
+  margin-right: 1rem;
+  outline: none;
+}
+
+.users-icon {
+  margin-bottom: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #323232;
+  padding: 1rem;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+th {
+  text-align: left;
+  background: hsla(0, 33%, 53%, 0.5);
+}
+
+.ischecked {
+  background-color: #666;
+}
+
+/* spinner css */
+#loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.delete,
+.edit {
+  margin-right: 0.5rem;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+.pagination-block {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  display: inline-block;
+  padding: 8px 12px;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #2b2727;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.page-link:hover {
+  background-color: #f0f0f0;
+}
+
+.page-item.active .page-link {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.input-text-edit {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Optional: Add focus styles */
+.input-text-edit:focus {
+  outline: none;
+  border-color: #2196f3;
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+}
+
+.save {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.cancel {
+  cursor: pointer;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5.3rem;
+}
+
+.main-delete {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: red;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
