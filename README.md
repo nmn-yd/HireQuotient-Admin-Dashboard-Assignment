@@ -15,10 +15,10 @@ The Admin Dashboard is a lightweight, in-memory web application designed for eff
    
 ![image](https://github.com/nmn-yd/HireQuotient-Admin-Dashboard-Assignment/assets/97431919/5df31be2-638a-4347-ab4c-4aee1cfb81b3)
    
-2. ### <span style="font-size:20px;">In-Place Editing and Deletion</span>
-  - Modify or delete rows in real-time without persistence.
+2. ### <span style="font-size:20px;">In-Place Deletion</span>
+  - Delete rows in real-time without persistence.
   - When we delete any table entry, it gets removed from the user array holding all the users.
-  - we can delete table entries by clicking on the delete icon and we can also select multiple entries and delete them all together by clicking on delete selected
+  - we can delete table entries by clicking on the delete icon and we can also select multiple entries and delete them all together by clicking on the delete selected
    
 3. ### <span style="font-size:20px;">Pagination</span>
   - Dynamically divide the dataset into pages with navigation buttons.
